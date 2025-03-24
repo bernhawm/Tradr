@@ -1,0 +1,2 @@
+# Tradr
+ TCG Trade App
