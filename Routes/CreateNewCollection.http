@@ -1,0 +1,27 @@
+
+
+POST https://pknnoj4h93.execute-api.us-east-2.amazonaws.com/collections
+content-type: application/json
+
+{
+  "userId": "user-101112",
+  "collection": {
+    "collectionId": "col-001",
+    "collectionName": "Commander Deck",
+    "cards": [
+      {
+        "cardId": "0003aa31-d42e-4972-9fb9-086aefe29a2c",
+        "quantity": 3,
+        "name": "Birds of Paradise",
+        "foil": false
+      },
+      {
+        "cardId": "0016ea50-4f77-4814-a505-8067ecb177cc",
+        "quantity": 2,
+        "name": "Temporal Manipulation",
+        "foil": true
+      }
+    ]
+  }
+}
+

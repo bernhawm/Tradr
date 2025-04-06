@@ -1,0 +1,10 @@
+
+#Example to get a specific users collections
+#GET https://pknnoj4h93.execute-api.us-east-2.amazonaws.com/collections/user-123
+
+#Second Example 
+GET https://pknnoj4h93.execute-api.us-east-2.amazonaws.com/collections/user-456
+
+
+
+
