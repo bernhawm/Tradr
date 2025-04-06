@@ -164,3 +164,8 @@ node-app/~$MagicCards.xlsx
 python/data/collection.csv
 python/data/default_cards.json
 node-app/default_cards.json
+/.aws
+/terraform/.terraform
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/.terraform.lock.hcl

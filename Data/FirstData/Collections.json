@@ -1,0 +1,96 @@
+[
+  {
+    "userId": "user-123",
+    "collections": [
+      {
+        "collectionId": "col-001",
+        "collectionName": "Main Collection",
+        "cards": [
+          {
+            "cardId": "0003aa31-d42e-4972-9fb9-086aefe29a2c",
+            "quantity": 3,
+            "name": "Birds of Paradise",
+            "foil": false
+          },
+          {
+            "cardId": "0016ea50-4f77-4814-a505-8067ecb177cc",
+            "quantity": 2,
+            "name": "Temporal Manipulation",
+            "foil": true
+          }
+        ]
+      },
+      {
+        "collectionId": "col-002",
+        "collectionName": "Trade Binder",
+        "cards": [
+          {
+            "cardId": "00372c7a-2e83-4a26-9642-0d092dfcf861",
+            "quantity": 1,
+            "name": "Eldrazi Temple",
+            "foil": false
+          },
+          {
+            "cardId": "b77dcee1-f42e-4c9d-b6b7-6d5885826060",
+            "quantity": 1,
+            "name": "Oracle of the Alpha",
+            "foil": true
+          },
+          {
+            "cardId": "5a210b32-6e1f-4578-bd8b-4e481b761159",
+            "quantity": 1,
+            "name": "Izoni, Thousand-Eyed",
+            "foil": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "userId": "user-456",
+    "collections": [
+      {
+        "collectionId": "col-003",
+        "collectionName": "Main Collection",
+        "cards": [
+          {
+            "cardId": "0003aa31-d42e-4972-9fb9-086aefe29a2c",
+            "quantity": 3,
+            "name": "Birds of Paradise",
+            "foil": false
+          },
+          {
+            "cardId": "0016ea50-4f77-4814-a505-8067ecb177cc",
+            "quantity": 2,
+            "name": "Temporal Manipulation",
+            "foil": true
+          }
+        ]
+      },
+      {
+        "collectionId": "col-004",
+        "collectionName": "Trade Binder",
+        "cards": [
+          {
+            "cardId": "00372c7a-2e83-4a26-9642-0d092dfcf861",
+            "quantity": 1,
+            "name": "Eldrazi Temple",
+            "foil": false
+          },
+          {
+            "cardId": "b77dcee1-f42e-4c9d-b6b7-6d5885826060",
+            "quantity": 1,
+            "name": "Oracle of the Alpha",
+            "foil": true
+          },
+          {
+            "cardId": "5a210b32-6e1f-4578-bd8b-4e481b761159",
+            "quantity": 1,
+            "name": "Izoni, Thousand-Eyed",
+            "foil": true
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+{
+    "tradeId": "trade-001",
+    "userId": "user_123",
+    "partnerId": null,
+    "timestamp": "2025-04-04T16:30:00Z",
+    "cardsTraded": [
+      {
+        "cardId": "0003aa31-d42e-4972-9fb9-086aefe29a2c",
+        "quantity": 3,
+        "name": "Birds of Paradise",
+        "foil": false,
+        "collection": "Main Collection"
+      }
+    ],
+    "cardsReceived": [
+      {
+        "cardId": "00372c7a-2e83-4a26-9642-0d092dfcf861",
+        "quantity": 1,
+        "name": "Eldrazi Temple",
+        "foil": false,
+        "fromCollection": "Trade Binder",
+        "toCollection": "Main Collection"
+      },
+      {
+        "cardId": "b77dcee1-f42e-4c9d-b6b7-6d5885826060",
+        "quantity": 1,
+        "name": "Oracle of the Alpha",
+        "foil": true,
+        "fromCollection": "Trade Binder",
+        "toCollection": "Commander Deck"
+      }
+    ],
+    "notes": "Local trade at FNM"
+  }
+  
