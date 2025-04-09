@@ -48,19 +48,31 @@ resource "aws_iam_policy_attachment" "dynamodb_policy_attach" {
 
 
 resource "aws_lambda_function" "get_collections" {
-  filename         = "lambda.zip"
+  filename         = "lambda/lambda.zip"
   function_name    = "get_collections"
   role             = aws_iam_role.lambda_exec_role.arn
   handler          = "index.handler"
   runtime          = "nodejs18.x"
   source_code_hash = filebase64sha256("lambda/lambda.zip")
   timeout          = 10
-  
+    environment {
+    variables = {
+      TABLE_NAME     = aws_dynamodb_table.users_collections.name
+      RDS_HOST       = aws_db_instance.users_db.address
+      RDS_USER       = var.DBusername
+      RDS_PASSWORD   = var.DBpassword  # this is just here for default use since it is spun down after test
+      RDS_DATABASE   = "TradrRDSDB"
+    }
+  }
+  vpc_config {
+    subnet_ids         = [aws_subnet.public_subnet.id, aws_subnet.public_subnet_b.id]
+    security_group_ids = [aws_security_group.lambda_sg.id]
+  }
 }
 
 
 resource "aws_lambda_function" "create_collection" {
-  filename         = "lambda2.zip"
+  filename         = "lambda/lambda2.zip"
   function_name = "CreateCollectionFunction"
   runtime       = "nodejs18.x"
   handler       = "index.handler"
@@ -71,5 +83,23 @@ resource "aws_lambda_function" "create_collection" {
     variables = {
       TABLE_NAME = aws_dynamodb_table.users_collections.name
     }
+  }
+}
+
+
+resource "aws_security_group" "lambda_sg" {
+  name        = "lambda-sg"
+  description = "Security group for Lambda"
+  vpc_id      = aws_vpc.main.id
+
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  tags = {
+    Name = "lambda-sg"
   }
 }
