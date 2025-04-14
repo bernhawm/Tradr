@@ -6,7 +6,15 @@
 --   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 -- );
 
-
+--Improved
+-- CREATE TABLE users (
+--  id SERIAL PRIMARY KEY,
+--  cognito_sub UUID NOT NULL UNIQUE,
+--   username VARCHAR NOT NULL,
+--   email VARCHAR NOT NULL UNIQUE,
+--   password_hash TEXT NOT NULL,
+--   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+-- );
 
 -- INSERT INTO users (user_id, username, email, password_hash, created_at)
 -- VALUES
